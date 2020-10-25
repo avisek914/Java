@@ -2,10 +2,10 @@ package com.syntac.class7;
 
 public class whileloopbasics {
 public static void main(String[] args) {
-	 int a=99;
-	 while (a>=1) {
-		 System.out.print(a+" ");
-		 a-=2;
+	 int a=1;
+	 while (a<=3) {
+		 System.out.println("Hello Syntax Team!");
+		 a++;
 	 }
 }
 }

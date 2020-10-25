@@ -36,12 +36,11 @@ public class Switch {
 		case 7:
 			today="Sunday";
 			break;
-	    default:
-	    	today="Invalid date";
+
 		
 		}
 		
-		System.out.println(today);
+	
 		
 	}
 }

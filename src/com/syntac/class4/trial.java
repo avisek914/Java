@@ -1,21 +1,33 @@
 package com.syntac.class4;
 
+import java.util.Scanner;
+
 public class trial {
 	 public static void main(String[] args) {
-         boolean male=true;
-         boolean female=false;
-         int age = 18;
-
-
-         if (male) {
-             if ( age < 25) {
-                 System.out.println("boy");
-             } else {
-                 System.out.println("man");
+          System.out.println("Do you need a loan?");
+          Scanner input=new Scanner(System.in);
+          boolean loan=input.nextBoolean();
+          
+     if (loan) {
+    	 System.out.println("What is your credit score?");
+           int credit=input.nextInt();
+             if (credit<600) {
+            	 System.out.println("The eligibility is Not eligible");
+             }else if(credit>=600 && credit<=700) {
+            	 System.out.println("The eligibility is Maybe eligible");
+            	
+             }else if (credit>700 && credit<800) {
+            	 System.out.println("The eligibility is Eligible");
+             }else {
+            	 System.out.println("The eligibility is Definitely eligible");
+            	 
              }
-         }
-         else {
-        	 
-         }
-	 }
+     
+     
+     }else {
+    	 System.out.println("The eligibility is Unknown");
+     }
+	 
+             
+}
 }
